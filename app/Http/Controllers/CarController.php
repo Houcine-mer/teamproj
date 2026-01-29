@@ -96,9 +96,11 @@ class CarController extends Controller
     public function tourCars()
 {
     return Car::where('tour', true)
-        ->select('id', 'name')
+        ->select('id', 'brand_name', 'name', 'year', 'image_url', 'tourprice')
         ->get();
 }
+
+
 
     
 }

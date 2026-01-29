@@ -22,7 +22,7 @@ async function loadRentOrders(userId) {
 
     const orders = await response.json();
     const container = document.getElementById("cart-content");
-    container.innerHTML = ""; // clear previous items
+    container.innerHTML = ""; 
 
     orders.forEach(order => {
       const rentCard = document.createElement("div");
@@ -57,7 +57,6 @@ async function loadRentOrders(userId) {
       container.appendChild(rentCard);
     });
 
-    // Attach delete functionality
     document.querySelectorAll(".remove-btn-kk").forEach(btn => {
       btn.addEventListener("click", e => {
         const userId = e.target.dataset.userId;

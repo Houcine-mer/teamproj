@@ -24,11 +24,6 @@ async function loadTourOrders(userId) {
           
           <div class="rent-bottom">
           <span class="rent-price">total price: $${order.pivot.total_price}</span>
-          
-                <button class="update-btn-kk-t" 
-                    data-user-id="${userId}" 
-                    data-car-id="${order.pivot.car_id}"
-                    data-rent-price="${order.rentprice}">✏️</button>
                 <button class="remove-btn-kk-t" 
                     data-user-id="${userId}" 
                     data-car-id="${order.pivot.car_id}">✖</button>
@@ -40,7 +35,6 @@ async function loadTourOrders(userId) {
       container.appendChild(rentCard);
     });
 
-    // Attach delete functionality
     document.querySelectorAll(".remove-btn-kk-t").forEach(btn => {
       btn.addEventListener("click", e => {
         const userId = e.target.dataset.userId;
@@ -48,6 +42,7 @@ async function loadTourOrders(userId) {
         removeTourOrder(userId, carId);
       });
     });
+
 
   } catch (error) {
     console.error("Error fetching rent orders:", error);
@@ -62,3 +57,30 @@ function formatEndDate(startDateStr, days) {
   date.setDate(date.getDate() + days );
   return formatDate(date.toISOString().split("T")[0]);
 }
+
+
+async function removeTourOrder(userId, carId) {
+  try {
+    const response = await fetch(`api/checkout/tour/${userId}/${carId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+      }
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      console.log(data.message);
+      const card = document.querySelector(`.remove-btn-kk-t[data-user-id='${userId}'][data-car-id='${carId}']`).closest('.rent-card');
+      if (card) card.remove();
+    } else {
+      console.error("Error deleting order:", data.message);
+    }
+  } catch (error) {
+    console.error("Error deleting order:", error);
+  }
+}
+
+

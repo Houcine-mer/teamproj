@@ -104,18 +104,13 @@
 
 <div id="updateTourModal">
   <div>
-    <h2>Add a Tour Order</h2>
+    <h2>Update a Tour Order</h2>
     <form id="updateTourForm">
-<label>Car Name:
-  <select name="car_id" id="carNameTU" required>
-    <option value="">Select a car</option>
-  </select>
-</label>
       <label>Start Date: <input type="date" name="year" id="DateTU"></label>
       <label>Duration <input type="number" name="image_url" id ="DurationTU" required></label>
       <div>
         <button type="submit">Submit</button>
-        <button type="button" id="cancelUpdateTour">Cancel</button>
+        <button type="button" id="cancelUpdateTour" onclick="closeUpdateTourOrderModal()">Cancel</button>
       </div>
     </form>
   </div>
@@ -136,7 +131,7 @@
 
 
   <section class="available-tours">
-    <h2>Available Tours</h2>
+    <h2>Available Cars For Tour</h2>
     <div class="tour-grid" id="tourGrid">
   
     </div>
@@ -166,6 +161,7 @@
   <script src="{{ asset('js/load-all.js') }}"></script>
   <script src="{{ asset('js/usrly.js') }}"></script>
   <script src="{{ asset('js/fetchTour.js') }}"></script>
+  <script src="{{ asset('js/tour.js') }}"></script>
 
   <style>.book-tour-box {
   display: flex;

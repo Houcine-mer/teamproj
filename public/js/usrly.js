@@ -80,7 +80,7 @@ updateCartIcon();
 function updateCartIcon() {
   const cartImg = document.getElementById('cartIcon-id');
   const imgUrl = getComputedStyle(document.body).getPropertyValue('--cart-img').trim();
-  cartImg.src = imgUrl.replace(/url\(["']?(.+?)["']?\)/, '$1');
+  cartImg.src = imgUrl.replace(/url\(["']?(.+?)["']?\)/, '$1'); 
 }
 
 updateCartIcon();
