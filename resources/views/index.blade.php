@@ -110,9 +110,9 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[4vw] py-3 px-4 mr-2 ml-2">
                 <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
-                    <img style="margin-top: 3vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/bwm.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
-                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">BMW X5</h3>
-                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$65,900</h2>
+                    <img style="margin-top: 3vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="/images/GlaSuv.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">MERCEDES GLA SUV</h3>
+                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$70000</h2>
                     <p style="margin-top: 0;">or $89/day</p>
                     <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
@@ -121,9 +121,9 @@
                     </div>
                 </div>
                 <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
-                    <img class="mx-auto" style=" margin-top: 1vh; margin-bottom:1vh ;border-radius:10%" src="images/rs666.jpg" alt="tesla" title="tesla" width="87%" height="30%">
-                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']"  style="margin-top: 0;">AUDI RS6 2025</h3>
-                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$89,900</h2>
+                    <img class="mx-auto" style=" margin-top: 1vh; margin-bottom:1vh ;border-radius:10%" src="/images/rs6-pic.avif" alt="tesla" title="tesla" width="87%" height="30%">
+                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']"  style="margin-top: 0;">AUDI RS6</h3>
+                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$120000</h2>
                     <p style="margin-top: 0;">or $89/day</p>
                     <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
@@ -131,10 +131,10 @@
                         <a class="bg-gray-900 px-[11vw] lg:px-[5vw] py-[0.6vh] text-white text-[1rem] sm:text-[1.5rem] md:text-[1.66rem] lg:text-[1rem] font-bold font['Poppins'] rounded-md hover:bg-gray-950 transition duration-300">Rent</a>
                     </div>
                 </div>
-                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg lg:hidden ">
-                    <img style="margin-top: 1vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="images/a4.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
-                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">AUDI A4 2024</h3>
-                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$45,900</h2>
+                <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg ">
+                    <img style="margin-top: 1vh; margin-bottom:1vh ;margin-left: 9px;border-radius:10%" src="/images/G-Class.jpg" alt="bmw x5" title="bmw x5" width="95%" height="40%">
+                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">MERCEDES G-CLASS</h3>
+                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$150000</h2>
                     <p style="margin-top: 0;">or $69/day</p>
                     <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
@@ -143,9 +143,9 @@
                     </div>
                 </div>
                 <div class="bg-rgb(68, 68, 69) py-[3vh] px-[1.75vw] transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] rounded-lg shadow-lg">
-                    <img class="mx-auto" style=" margin-bottom:1vh" src="images/ms.jpg" alt="mercedes" title="mercedes" width="87%">
-                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">Mercedes C class</h3>
-                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$95,900</h2>
+                    <img class="mx-auto" style=" margin-bottom:1vh" src="/images/M3.webp" alt="mercedes" title="mercedes" width="87%">
+                    <h3 class="text-center text-xl sm:text-2xl md:text-4xl lg:text-xl font-bold font-['Poppins']" style="margin-top: 0;">BMW M3</h3>
+                    <h2 class="text-2xl lg:text-lg" style="margin-top: 0; color: rgb(68, 68, 69);">$120000</h2>
                     <p style="margin-top: 0;">or $79/day</p>
                     <br />
                     <div class="flex justify-center gap-[7vw] xl:gap-[4vw]">
